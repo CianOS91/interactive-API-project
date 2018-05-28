@@ -1,0 +1,507 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
+
+/*------------------------special/text/margin/padding*/
+.uppercase{
+    text-transform: uppercase;
+}
+
+html,
+body {
+    width: 100%;
+}
+
+
+.caption-header{
+    font-family: "Exo" , sans-serif;
+    font-weight: 700;
+    font-size: 34px;
+    color: black;
+}
+
+.caption-p{
+    font-family: "Roboto" , sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: black;
+    padding-right: 10px;
+}
+
+.carousel-caption{
+    background-color: rgba(239, 239, 239 , .5)
+}
+
+/*------------------------background images*/
+
+.bg-image{
+    height: 100vh;
+    width: 100%;
+
+    background: no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+
+
+.carousel-inner>.item>a>img, .carousel-inner>.item>img{
+    height: 100vh;
+    width: 100%;
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+.pictures{
+    width: 100%;
+    height: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+.home-screen{
+    height: 100vh;
+     padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/*-------------------------NAV*/
+nav{
+    overflow: auto;
+}
+
+.nav-color{
+    background-color: rgba(0,0,0,.4)
+}
+
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0px;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar .logo-text{
+    font-family: "Exo" , sans-serif;
+    font-weight: 600;
+    color: #fafafa;
+    font-size: 24px;
+}
+.navbar-default .navbar-nav>li>a{
+    color: white;
+    font-family: "Roboto" , sans-serif;
+}
+
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover{
+    background-color: rgba(255, 255, 255, .9);
+    color: black;
+    transition: all .35s ease-in-out;
+    -moz-transition: all .35s ease-in-out;
+    -webkit-transition: all .35s ease-in-out;
+    -o-transition: all o.35s ease-in-out;
+}
+
+.navbar .logo-text:focus,
+.navbar .logo-text:hover{
+    color: #c60707;
+    background-color: black;
+    transition: all .35s ease-in-out;
+    -moz-transition: all .35s ease-in-out;
+    -webkit-transition: all .35s ease-in-out;
+    -o-transition: all o.35s ease-in-out;
+}
+
+.nav-header{
+    display: block;
+    background-color: rgba(0,0,0,.7)
+}
+
+.nav-social{
+    font-size: 18px;
+    display: inline-block;
+    padding: 10px;
+}
+
+.navbar-default .nav-social li a i:hover{
+    background: #c60707;
+    transition: all .35s ease-in-out;
+    -moz-transition: all .35s ease-in-out;
+    -webkit-transition: all .35s ease-in-out;
+    -o-transition: all o.35s ease-in-out;
+}
+
+/*------------------------Home*/
+
+
+
+.home-screen-button{
+    margin-left: 10px;
+}
+
+
+.button-color{
+    background-color: #c60707;
+    border-color: black;
+    border-bottom-style: solid;
+    transition: all .35s ease-in-out;
+    -moz-transition: all .35s ease-in-out;
+    -webkit-transition: all .35s ease-in-out;
+    -o-transition: all o.35s ease-in-out;
+}
+
+.button-color:focus,
+.button-color:hover{
+    background-color: black;
+    border-color: #c60707;
+    transition: all .35s ease-in-out;
+    -moz-transition: all .35s ease-in-out;
+    -webkit-transition: all .35s ease-in-out;
+    -o-transition: all o.35s ease-in-out;
+}
+
+/*--------------Footer*/
+
+.footer-logo-text{
+   font-family: "Exo" , sans-serif;
+    font-weight: 600;
+    color: #fafafa; 
+    font-size: 18px;
+    padding-top: 20px;
+}
+
+.footer-text{
+    font-family: "Exo" , sans-serif;
+    font-weight: 600;
+    color: #fafafa; 
+    font-size: 18px;
+    padding-top: 20px;
+    text-align: center
+}
+
+.footer-bg{
+    background-color: black;
+}
+
+.social-links{
+    width: 32px;
+    height: 32px;
+    padding: 12px 0;
+    border-radius: 50%;
+    font-size: 15px;
+    line-height: 7px;
+    text-align: center;
+    color: black;
+    background: #fafafa;
+}
+
+.footer-title-spacing{
+    padding: 20px 0px 5px 0px;
+    text-align: center;
+}
+
+footer .footer-title-spacing>a:focus,
+footer .footer-title-spacing>a:hover{
+    color: #c60707;
+    background-color: black;
+    text-decoration: none;
+    transition: all .35s ease-in-out;
+    -moz-transition: all .35s ease-in-out;
+    -webkit-transition: all .35s ease-in-out;
+    -o-transition: all o.35s ease-in-out;
+}
+
+footer ul li a i:hover{
+    background: #c60707;
+    transition: all .35s ease-in-out;
+    -moz-transition: all .35s ease-in-out;
+    -webkit-transition: all .35s ease-in-out;
+    -o-transition: all o.35s ease-in-out;
+}
+
+
+
+/*-------------------------------------Contact*/
+
+.center-form{
+    max-width: 70%;
+    margin: 0 auto;
+    transform: translateY(50%);
+}
+
+.contact-button-color{
+    color: #fafafa;
+    margin-top: 20px;
+}
+
+.contact-button-color:hover,
+.contact-button-color:focus{
+    color: #fafafa;
+}
+.contact-footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.contact-heading{
+    font-family: "Exo" , sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.contact-text{
+    font-family: "Roboto" , sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+
+
+/*-------------------------------------------Sign up/Log in*/
+
+.center-form-sign-up-log-in {
+    max-width: 40%;
+    margin: 0 auto;
+    transform: translateY(100%);
+}
+
+/*----------------------------------------------Media Query*/
+
+
+
+@media(max-width: 1220px){
+    .news-quotes{
+        padding: 0 15px 15px 15px;
+    }
+}
+
+
+@media(min-width: 768px) {
+    .carousel-caption{
+        vertical-align: middle;
+    }
+}
+
+
+@media(max-width: 780px) and (min-width: 501px){
+    .gallery-image-p{
+    font-family: "Exo" , sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: #fafafa;
+    left: 35%;
+    top: 90%;
+    position: absolute;
+    padding: 2px 5px;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.contact-footer{
+    position: absolute;
+    bottom: -325px;
+    left: 0;
+    right: 0;
+    }
+    
+
+#carousel-gallery-id.carousel-inner>.item>a>img, .carousel-inner>.item>img {
+    height: 50vh;
+    width: 100%;
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+#carousel-index-id.carousel-inner>.item>a>img, .carousel-inner>.item>img {
+    height: 100vh;
+    width: 100%;
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+}
+
+
+@media(max-width: 500px){
+    .carousel-caption{
+        width:100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    
+    .contact-footer{
+    position: absolute;
+    bottom: -150px;
+    left: 0;
+    right: 0;
+    }
+    
+    .center-form{
+    max-width: 70%;
+    margin: 0 auto;
+    transform: translateY(25%);
+}
+
+.center-form-sign-up-log-in {
+    max-width: 60%;
+    margin: 0 auto;
+    transform: translateY(100%);
+}
+
+
+#carousel-gallery-id.carousel-inner>.item>a>img, .carousel-inner>.item>img {
+    height: 50vh;
+    width: 100%;
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+#carousel-index-id.carousel-inner>.item>a>img, .carousel-inner>.item>img {
+    height: 100vh;
+    width: 100%;
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+}
+
+
+/*------------hotel search--------------*/
+
+
+.hotel-section-styling{
+    padding-top: 52px;
+    display: block;
+    height: 100%;
+    left: 0;
+    right: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map, #mapDirections, #mapAttractions {
+        height: 90vh;
+      }
+      /* Optional: Makes the sample page fill the window. */
+    /* html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+     }*/
+      .table {
+        font-size: 12px;
+      }
+      #map {
+        width: 100%;
+      }
+      #listing {
+        position: absolute;
+        width: 200px;
+        height: 470px;
+        overflow: auto;
+        right: 5%;
+        top: 20%;
+        cursor: pointer;
+        overflow-x: hidden;
+      }
+      #findhotels {
+        position: absolute;
+        text-align: right;
+        width: 100px;
+        font-size: 14px;
+        padding: 4px;
+        z-index: 5;
+        background-color: #fff;
+      }
+      #locationField {
+        position: absolute;
+        width: 190px;
+        height: 25px;
+        left: 108px;
+        z-index: 5;
+        background-color: #fff;
+      }
+      #controls {
+        position: absolute;
+        left: 300px;
+        width: 140px;
+        z-index: 5;
+        background-color: #fff;
+      }
+      #autocomplete {
+        width: 100%;
+      }
+      #country {
+        width: 100%;
+      }
+      .placeIcon {
+        width: 20px;
+        height: 34px;
+        margin: 4px;
+      }
+      .hotelIcon {
+        width: 24px;
+        height: 24px;
+      }
+      #resultsTable {
+        border-collapse: collapse;
+        width: 240px;
+      }
+      #rating {
+        font-size: 13px;
+        font-family: Arial Unicode MS;
+      }
+      .iw_table_row {
+        height: 18px;
+      }
+      .iw_attribute_name {
+        font-weight: bold;
+        text-align: right;
+      }
+      .iw_table_icon {
+        text-align: right;
+      }
+
+/*--------------food----------*/
+
+
+body { font: normal 14px Verdana; }
+h1 { font-size: 24px; }
+h2 { font-size: 18px; }
+#sidebar { float: right; width: 30%; }
+#main { padding-right: 15px; }
+.infoWindow { width: 220px; }
+
+
+
+/*------------attractions--------*/

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <title>TravelWise</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
+        <link rel="stylesheet" href="css/style.css" type="text/css" />
+        <script src="js/hotel.js"></script>
+    </head>
+    
+    <body>      
+        <nav class="navbar navbar-default nav-header">
+                <div class="container-fluid nav-color">
+                    <div class="navbar-header">
+                        <a href="index.html" class="navbar-brand active logo-text">
+                            TravelWise
+                        </a>
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    
+                    <div class="navbar-collapse collapse navbar-right uppercase" id="navbar">
+                        <ul class="nav navbar-nav">
+                            <li><a href="hotel.html">HOTEL</a></li>
+                            <li><a href="attractions.html">ATTRACTIONS</a></li>
+                            <li><a href="food.html">FOOD</a></li>
+                            <li><a href="directions.html">DIRECTIONS</a></li>
+                            <li><a href="contact.html">CONTACT</a></li>
+                            <li><a href="suli.html">SIGN UP/ LOG IN</a></li>
+                            <div class="nav-social list-inline">
+                            <li><a target="_blank" href="#"><i class="fa fa-facebook social-links"></i></a></li>
+                            <li><a target="_blank" href="#"><i class="fa fa-twitter social-links"></i></a></li>
+                            <li><a target="_blank" href="#"><i class="fa fa-youtube social-links"></i></a></li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            </nav>
+            
+        <section class="container-fluid hotel-section-styling">
+            <div id="findhotels">
+      Find hotels in:
+    </div>
+
+    <div id="locationField">
+      <input id="autocomplete" placeholder="Enter a city" type="text" />
+    </div>
+
+    <div id="controls">
+      <select id="country">
+        <option value="all">All</option>
+        <option value="au">Australia</option>
+        <option value="br">Brazil</option>
+        <option value="ca">Canada</option>
+        <option value="fr">France</option>
+        <option value="de">Germany</option>
+        <option value="mx">Mexico</option>
+        <option value="nz">New Zealand</option>
+        <option value="it">Italy</option>
+        <option value="za">South Africa</option>
+        <option value="es">Spain</option>
+        <option value="pt">Portugal</option>
+        <option value="us" selected>U.S.A.</option>
+        <option value="uk">United Kingdom</option>
+      </select>
+    </div>
+
+    <div id="map"></div>
+
+    <div id="listing">
+      <table id="resultsTable">
+        <tbody id="results"></tbody>
+      </table>
+    </div>
+
+    <div style="display: none">
+      <div id="info-content">
+        <table>
+          <tr id="iw-url-row" class="iw_table_row">
+            <td id="iw-icon" class="iw_table_icon"></td>
+            <td id="iw-url"></td>
+          </tr>
+          <tr id="iw-address-row" class="iw_table_row">
+            <td class="iw_attribute_name">Address:</td>
+            <td id="iw-address"></td>
+          </tr>
+          <tr id="iw-phone-row" class="iw_table_row">
+            <td class="iw_attribute_name">Telephone:</td>
+            <td id="iw-phone"></td>
+          </tr>
+          <tr id="iw-rating-row" class="iw_table_row">
+            <td class="iw_attribute_name">Rating:</td>
+            <td id="iw-rating"></td>
+          </tr>
+          <tr id="iw-website-row" class="iw_table_row">
+            <td class="iw_attribute_name">Website:</td>
+            <td id="iw-website"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+        </section>
+         
+        <footer class="footer-bg container-fluid">
+               <div class="row">
+                    <div class="col-sm-4">
+                        <div class="footer-title-spacing">
+                        <a href="index.html" class="footer-logo-text">
+                                        TR
+                            </a>
+                    </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <ul class="list-inline footer-title-spacing">
+                            <li><a target="_blank" href="#"><i class="fa fa-facebook social-links"></i></a></li>
+                            <li><a target="_blank" href="#"><i class="fa fa-twitter social-links"></i></a></li>
+                            <li><a target="_blank" href="#"><i class="fa fa-youtube social-links"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <p class="footer-text">©2018</p>
+                    </div>
+                </div>
+            </footer>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkYdOAPDMkVAQ_-rPTrS7z9lXK5dvl-KM&libraries=places&callback=initMap" async defer>
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </body>
+</html>
